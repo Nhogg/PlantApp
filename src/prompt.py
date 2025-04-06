@@ -22,6 +22,8 @@ def get_prompt(plant_type: str, plant_name: str) -> str:
     
     WARNING: You will occasionally receive a message that only contains a number. When this happens, treat this number
     as a soil moisture level with the following parameters:
+    122400 - dry
+    122500+ - wet
     
     """
     return system_prompt.format(plant_name=plant_name, plant_type=plant_type)
